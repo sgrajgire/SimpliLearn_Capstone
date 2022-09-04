@@ -10,6 +10,15 @@
           <include name="TearDown"/>
         </methods>
       </class> <!-- test.AdminLoginTest -->
+      <class name="test.UserLoginTest">
+        <methods>
+          <include name="CategoryTest"/>
+          <include name="BuyMedicineTest"/>
+          <include name="SetUp"/>
+          <include name="ProductFilterTest"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- test.UserLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
