@@ -13,8 +13,7 @@ public class AdminLoginTest extends BaseClass{
 	public void addProduct() throws InterruptedException {
 		
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.Login("vk@gmail.com", "admin");
-		
+		loginPage.Login("vk@gmail.com", "admin");		
 		HomePage homePage = new HomePage(driver);
 		homePage.manageProducts();
 		
@@ -22,15 +21,12 @@ public class AdminLoginTest extends BaseClass{
 		String name = "Testing Med - 2";
 		manageProducts.addProduct(name, "Royal", "Test medicine", "15", "50", 
 				"C:\\PROTECH\\SimpliLearn-Course\\eclips_workspace\\capstone\\TestMedicine.jpg", 
-				"Antibiotics");
-		
+				"Antibiotics");		
 		// click on view product
 		homePage.viewProducts();
 		String[] expMedicine = {name};
 		ViewProductsPage viewProducts = new ViewProductsPage(driver);	
-		viewProducts.productsByFilter(name, expMedicine);
-		
+		viewProducts.productsByFilter(name, expMedicine);		
 		homePage.Logout();
 	}
-
 }

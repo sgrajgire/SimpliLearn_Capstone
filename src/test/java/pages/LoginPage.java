@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-
 	
 	@FindBy(id = "login")
 	WebElement LoginLink;
@@ -24,8 +23,7 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		
 		PageFactory.initElements(driver, this);
-	}
-	
+	}	
 	
 	public void Login(String username, String password) throws InterruptedException {
 		
